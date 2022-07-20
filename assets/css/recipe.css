@@ -32,6 +32,11 @@ p {
   font-size: 11pt;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+pre{
+  font-size: 11pt;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+}
 
 a {
   color: #a4a400;
