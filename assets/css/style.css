@@ -1,40 +1,56 @@
-body{
-    padding-left: 30px;  
-    background-color:rgb(232, 232, 240);
+body {
+  padding-left: 30px;
+  background-color: rgb(232, 232, 240);
 }
 img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin: 5px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 5px;
 }
 .pics {
-    margin: 10px;
-    border: 1px;
-    /* float: left; */
-
+  margin: 10px;
+  border: 1px;
+  /* float: left; */
 }
 .desc {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
-h1{
-    font-family:Arial, Helvetica, sans-serif;
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-   color:cornflowerblue;
-   
+  color: cornflowerblue;
 }
 
-ol li{
-    font-size: large;
-    font-weight: 200;
-    font-family: sans-serif;
+ol li {
+  font-size: large;
+  font-weight: 200;
+  font-family: sans-serif;
 }
 
-ul li{
-    font-size: large;
-    font-weight: 200;
-    font-family: sans-serif;  
+ul li {
+  font-size: large;
+  font-weight: 200;
+  font-family: sans-serif;
 }
 
+em {
+  color: red;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.drop-cap {
+  font-size: 200%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
