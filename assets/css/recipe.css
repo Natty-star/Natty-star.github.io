@@ -54,3 +54,7 @@ footer {
 ul {
   list-style-image: url("/assets/images/pie_icon.gif");
 }
+
+img{
+  border-radius: 10px;
+}

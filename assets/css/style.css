@@ -9,6 +9,7 @@ img {
   margin: 5px;
 }
 .pics {
+  display: inline-block;
   margin: 10px;
   border: 1px;
   /* float: left; */
@@ -53,4 +54,8 @@ a:link {
   font-size: 200%;
   font-family: algerian, courier;
   line-height: 80%;
+}
+
+img{
+  border-radius: 10px;
 }
