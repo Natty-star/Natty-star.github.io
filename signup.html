@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Signup</title>
+
     <link rel="stylesheet" href="./assets/css/signup.css" />
   </head>
   <body>
@@ -18,60 +27,114 @@
       <form action="http://mumstudents.org/params.php">
         <fieldset>
           <legend>New User Signup</legend>
-          <div>
-            <label for="">Name:</label>
-            <input type="text" name="" id="" />
+          <div class="row">
+            <div class="col-25">
+              <label for="">Name:</label>
+            </div>
+            <div class="col-75">
+              <input size="16" type="text" name="" id="" />
+            </div>
           </div>
-          <div>
-            <label for="">Gender:</label>
-            <input type="radio" name="gender" id="" /> Male
-            <input type="radio" name="gender" id="" /> Female
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Gender:</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" name="gender" id="" /> Male
+              <input type="radio" name="gender" id="" /> Female
+            </div>
           </div>
-          <div>
-            <label for="age">Age:</label>
-            <input type="text" name="age" id="age" pattern="{,2}" />
+
+          <div class="row">
+            <div class="col-25">
+              <label for="age">Age:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" size="6" name="age" id="age" pattern="{,2}" />
+            </div>
           </div>
-          <div>
-            <label for="personality">Personality type:</label>
-            <input
-              type="text"
-              name="personality"
-              id="personality"
-              pattern="4"
-            />
-            <span>(<a href="./about.html">Don't know your type?</a>)</span>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="personality">Personality type:</label>
+            </div>
+            <div class="col-75">
+              <input
+                size="6"
+                type="text"
+                name="personality"
+                id="personality"
+                pattern="4"
+              />
+              <a href="./about.html">Don't know your type?</a>
+            </div>
           </div>
-          <div>
-            <label for="os">Fevorite OS:</label>
-            <select name="os" id="os">
-              <option value="windows" selected>Windows</option>
-              <option value="mac-os">Mac OS X</option>
-              <option value="Linux">Linux</option>
-            </select>
+          <div class="row">
+            <div class="col-25">
+              <label for="os">Fevorite OS:</label>
+            </div>
+            <div class="col-75">
+              <select name="os" id="os">
+                <option value="windows" selected>Windows</option>
+                <option value="mac-os">Mac OS X</option>
+                <option value="Linux">Linux</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label for="seeking-age">Seeking Age:</label>
-            <input
-              type="text"
-              name="seeking-age"
-              id="seeking-age"
-              pattern="{2}"
-              placeholder="min"
-            />
-            to
-            <input
-              type="text"
-              name="seeking-age"
-              id="seeking-age"
-              pattern="{2}"
-              placeholder="max"
-            />
+          <div class="row">
+            <div class="col-25">
+              <label for="seeking-age">Seeking Age:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                size="6"
+                name="seeking-age"
+                id="seeking-age"
+                pattern="{2}"
+                placeholder="min"
+                title="two input only"
+              />
+              to
+              <input
+                size="6"
+                type="text"
+                name="seeking-age"
+                id="seeking-age"
+                pattern="{2}"
+                placeholder="max"
+              />
+            </div>
           </div>
+
           <div>
-            <button type="submit">Signup</button>
+            <button class="btn" type="submit">Signup</button>
           </div>
         </fieldset>
       </form>
+      <p>
+        This page iis for single nerds to meet and date each othe I Type in
+        <br />
+        your personal information and wait for the nerdly lov to begin!
+        <br />Thank you for using our site.
+      </p>
+      <i
+        class="fas fa-arrow-alt-circle-left"
+        style="font-size: 20px; color: green"
+      >
+      </i>
+      <a href="./index.html">Back to the front page</a>
     </div>
+    <br /><br />
+    <footer>
+      <a href="http://validator.w3.org/check/referer"
+        ><img src="./assets/images/movies/w3c-html.png" alt="Valid HTML5"
+      /></a>
+      <br />
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"
+        ><img src="./assets/images/movies/w3c-css.png" alt="Valid CSS"
+      /></a>
+    </footer>
   </body>
 </html>

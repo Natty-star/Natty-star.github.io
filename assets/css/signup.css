@@ -1,14 +1,21 @@
+body{
+    margin: 30px;
+}
 fieldset {
-   margin: auto;
-   margin-top: 100px;
-   width: 700px;
+   margin: 20px;
+   margin-top: 50px;
+   width: 600px;
    padding: 10px;
    background-color: #a8d7f2;
    border-radius: 10px;
    /* color: white; */
 }
 legend {
+    font-size: 20px;
+    display: block;
     background-color: white;
+    border-radius: 4px;
+    border: 1px solid gray;
 }
 
 header strong {
@@ -34,3 +41,46 @@ header span{
     font-size: 0.7em;
     font-family: Arial, Helvetica, sans-serif;
 }
+.col-25{
+    float: left;
+    width: 17%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: auto;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input[type=text], select, textarea,option {
+    width: auto;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    font-weight: bold;
+    padding: 8px 8px 8px 0;
+    display: inline-block;
+  }
+
+  .btn {
+    background-color: pink;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  a{
+    color: red;
+  }
+
+  
