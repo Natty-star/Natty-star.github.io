@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retrive Grade</title>
+  </head>
+  <body>
+    <h1>Retrive your grade</h1>
+    <form action="https://mumstudents.org/params.php">
+      <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" />
+      </div>
+      <br />
+      <div class="id">
+        <label for="id">Id</label>
+        <input type="text" name="id" id="id" />
+      </div>
+      <br />
+      <div class="select">
+        <label for="">Select Assignment </label>
+        <select name="Assignment" id="">
+          <option value="Assignment1" selected>Assignment 1</option>
+          <option value="Assignment1" name="Assignment">Assignment 2</option>
+          <option value="Assignment1" name="Assignment">Assignment 3</option>
+          <option value="Assignment1" name="Assignment">Assignment 4</option>
+        </select>
+      </div>
+      <br />
+      <div class="radio">
+        <label for="">Entry</label>
+        <input type="radio" name="entry" value="2020" /> 2020
+        <input type="radio" name="entry" value="2021" /> 2021
+        <input type="radio" name="entry" value="2021" /> 2022
+      </div>
+      <div>
+        <input type="checkbox" name="" id="" required /> I Agreed to the terms
+        and conditions
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

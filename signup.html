@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+  </head>
+  <body>
+    <header>
+      <pre>
+    <strong>nerd</strong><em>Luv</em><sup>tm</sup>
+    <span><i>where meek geeks meet</i></span> 
+      </pre>
+    </header>
+    <div class="form">
+      <form action="http://mumstudents.org/params.php">
+        <fieldset>
+          <legend>New User Signup</legend>
+          <div>
+            <label for="">Name:</label>
+            <input type="text" name="" id="" />
+          </div>
+          <div>
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" id="" /> Male
+            <input type="radio" name="gender" id="" /> Female
+          </div>
+          <div>
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" pattern="{,2}" />
+          </div>
+          <div>
+            <label for="personality">Personality type:</label>
+            <input
+              type="text"
+              name="personality"
+              id="personality"
+              pattern="4"
+            />
+            <span>(<a href="./about.html">Don't know your type?</a>)</span>
+          </div>
+          <div>
+            <label for="os">Fevorite OS:</label>
+            <select name="os" id="os">
+              <option value="windows" selected>Windows</option>
+              <option value="mac-os">Mac OS X</option>
+              <option value="Linux">Linux</option>
+            </select>
+          </div>
+          <div>
+            <label for="seeking-age">Seeking Age:</label>
+            <input
+              type="text"
+              name="seeking-age"
+              id="seeking-age"
+              pattern="{2}"
+              placeholder="min"
+            />
+            to
+            <input
+              type="text"
+              name="seeking-age"
+              id="seeking-age"
+              pattern="{2}"
+              placeholder="max"
+            />
+          </div>
+          <div>
+            <button type="submit">Signup</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
