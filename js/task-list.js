@@ -1,11 +1,23 @@
-//let test = [];
+const tasks = [];
+if(localStorage.getItem("result")){
+    const eachTask = localStorage.getItem("result").split(",");
+    for (let index = 0; index < eachTask.length; index++) {
+        document.getElementById("textarea").value = `${eachTask} \n`;
+        tasks.push(eachTask);
+    }
+}
+
+console.log(tasks);
 function addList(){
     const task = document.getElementById("task").value;
-     document.getElementById("textarea").value += ` ${task} \n`;
-     localStorage.setItem("result" ,task);
-}
-if(localStorage.getItem("result")){
-    document.getElementById("textarea").value = localStorage.getItem("result");
+    if(task){
+        document.getElementById("textarea").value += ` ${task} \n`;
+     
+        tasks.push(task); 
+        localStorage.setItem("result" ,tasks);
+        //console.log(tasks)
+    }
+     
 }
 
 function clearList(){
