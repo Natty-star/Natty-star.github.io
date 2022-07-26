@@ -1,19 +1,19 @@
 const tasks = [];
+
 if(localStorage.getItem("result")){
     const eachTask = localStorage.getItem("result").split(",");
-    for (let index = 0; index < eachTask.length; index++) {
-        document.getElementById("textarea").value = `${eachTask} \n`;
-        tasks.push(eachTask);
-    }
+        document.getElementById("textarea").value = ` ${eachTask} \n`;
+        
+
 }
 
 console.log(tasks);
 function addList(){
-    const task = document.getElementById("task").value;
+    const task = document.getElementById("task").value +'\n';
     if(task){
-        document.getElementById("textarea").value += ` ${task} \n`;
+        document.getElementById("textarea").value += `${task} \n`;
      
-        tasks.push(task); 
+        tasks = tasks + task;
         localStorage.setItem("result" ,tasks);
         //console.log(tasks)
     }
