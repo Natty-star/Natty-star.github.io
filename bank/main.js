@@ -43,8 +43,6 @@ function localDataToAccount(){
     console.log(Account.accountInfoList);
 }
 
-
-
 if(localStorage.getItem('accounts')){
     localDataToAccount();
     //Account.accountInfoList.push(localStorage.getItem('accounts'));
@@ -74,7 +72,6 @@ var deposit = document.getElementById('deposit').value;
     
    Account.accountInfoList.push(account);
    saveToLocal();
-   console.log(Account.accountInfoList);
    
    display();
 }
@@ -187,3 +184,7 @@ function debit(){
         alert('Please enter debit amount' )
     }
 }
+
+
+
+
