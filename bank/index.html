@@ -8,28 +8,34 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>Bank Account</h2>
-    <div class="input">
-      <label for="accountName">Account Name: </label>
-      <input type="text" name="accountName" id="accountName" />
+    <div class="container">
+      <h2>Create Bank Account</h2>
+      <div class="input">
+        <label for="accountName">Account Name: </label>
+        <input type="text" name="accountName" id="accountName" />
+      </div>
+
+      <div class="input">
+        <label for="deposit">Deposit</label>
+        <input type="text" name="deposit" id="deposit" />
+      </div>
+      <br />
+
+      <button type="submit" id="createe-button">Create new account</button>
+
+      <div class="textarea">
+        <textarea
+          name="accounts"
+          id="accounts"
+          cols="30"
+          rows="10"
+          value="accounts"
+        ></textarea>
+      </div>
+      <button type="submit" id="depositButton">Deposit</button>
+      <button type="submit" id="debitButton">Debit</button>
     </div>
-    <br />
-    <div class="input">
-      <label for="deposit">Deposit</label>
-      <input type="text" name="deposit" id="deposit" />
-    </div>
-    <br />
-    <button type="submit" id="button">Create new account</button>
-    <br /><br />
-    <div class="textarea">
-      <textarea
-        name="accounts"
-        id="accounts"
-        cols="30"
-        rows="10"
-        value="accounts"
-      ></textarea>
-    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>
