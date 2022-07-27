@@ -146,11 +146,11 @@ function selecteAccount(){
 function deposit(){
     var accounts = Account.accountInfoList;
     const selectedAccount = document.getElementById('accountList').selectedIndex;
-    if(selecteAccount === 0){
+    if(selecteAccount === 0  ){
         alert("Please select account")
     }
     const inputBalance = document.getElementById('input-depost').value;
-    if (selectedAccount != 0 || inputBalance != '' ) {
+    if (selectedAccount != 0 || inputBalance != null ||inputBalance != '' ) {
         var balance = accounts[selectedAccount-1].getDeposit();
         //console.log(parseFloat(inputBalance) + parseFloat(balance));
         accounts[selectedAccount-1].setDeposit(parseFloat(inputBalance) + parseFloat(balance));
@@ -169,7 +169,7 @@ function debit(){
         alert("Please select account")
     }
     const inputBalance = document.getElementById('input-debit').value;
-    if (selectedAccount != 0 || inputBalance != '' ) {
+    if (selectedAccount != 0 || inputBalance != null || inputBalance != '' ) {
         var balance = accounts[selectedAccount-1].getDeposit();
         if(parseFloat(inputBalance) > parseFloat(balance)){
             alert("your balace is enougn")
@@ -178,8 +178,6 @@ function debit(){
             saveToLocal();
             location.href = "./index.html";
         }
-        //console.log(parseFloat(inputBalance) + parseFloat(balance));
-        
     }else{
         alert('Please enter debit amount' )
     }
