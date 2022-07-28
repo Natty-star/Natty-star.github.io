@@ -162,7 +162,6 @@ function deposit(){
 }
 
 function debit(){
-    console.log("we are here")
     var accounts = Account.accountInfoList;
     const selectedAccount = document.getElementById('accountList').selectedIndex;
     if(selecteAccount === 0){
