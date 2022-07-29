@@ -22,6 +22,7 @@ $(document).ready(function(){
    $('li.third-item').prev().css('background', 'blue')
 })
 4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by "Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new requirement.
+$("li.turkey").replaceWith("<li class="mashed_potatoes">Mashed Potatoes</li>")
  
 5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span of text ("some text") in the following to green.
  
