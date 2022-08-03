@@ -14,6 +14,7 @@
 
 
 Answer
+All three are functionally equivalent.
 The .each() method is designed to make DOM looping constructs concise and less error-prone. When called it iterates over the DOM elements that are part of the jQuery object.
          Code fragment 1
          Access the element by index nd element.
@@ -37,7 +38,7 @@ The .each() method is designed to make DOM looping constructs concise and less e
 <!—Answer - - >
   $(document).ready(function(){
    console.log("clolor")
-   $('div ul').css('color' , yellow)
+   $('div ul').css('color' , blue)
 })
 </script> →
 3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body element.

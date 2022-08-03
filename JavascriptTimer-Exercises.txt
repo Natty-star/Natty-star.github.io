@@ -36,7 +36,10 @@ Var booyah1 = function(){
 
 
 Function booyah2(){
-  alert(“BOOYAH”);
+  return function(){
+     alert(“BOOYAH”);
+  }
+
 }
 
 

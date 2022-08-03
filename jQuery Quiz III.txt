@@ -4,8 +4,8 @@
 1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to show it is just text (the red bold is gone).
   
 $(document).ready(function(){
-   $('p:first-child');
-   $('p:last-child').val('the red bold is gone');
+   var val = $('p').first().text();
+   $('p').last().html(val);
 })
 2. Write jQuery code to create a red background for the level-2 list items
 
