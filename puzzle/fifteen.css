@@ -1,0 +1,108 @@
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	font-size: 40pt;
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	/* background-image: url(background.jpg); */
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+    
+}
+
+.mario .puzzlepiece{
+    background-image: url('background.jpg');
+}
+
+.monalisa .puzzlepiece{
+    background-image : url('Mona_Lisa.jpg')
+}
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: rgb(0, 255, 195);
+	color: rgb(0, 255, 195);
+}
+
+/* grading styles -- for TAs only; not required by students */
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+.ready{
+    background-color: rgb(50, 178, 15);
+    border:  rgb(72, 178, 15) 3px solid;
+    border-radius : 4px;
+}
+
+#winner{
+	color: #bfb;
+}
+button {
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   select {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+   
+  }
+/*
+init = function() {
+    var puzzleArea = document.getElementById('puzzlearea');
+    var divs = puzzleArea.getElementsByTagName("div");
+      
+    // initialize each piece
+    for (var i=0; i< divs.length; i++) {
+        var div = divs[i];
+        
+        // calculate x and y for this piece
+        var x = ((i % 4) * 100) ;
+        var y = (Math.floor(i / 4) * 100) ;
+
+        // set basic style and background
+        div.className = "puzzlepiece";
+        div.style.left = x + 'px';
+        div.style.top = y + 'px';
+        div.style.backgroundImage = 'url("background.jpg")';
+        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
+        
+        // store x and y for later
+        div.x = x;
+        div.y = y; 
+    }        
+};
+*/
+
